@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+
 
 Route::get('/', 'ImageController@create');
-Route::post('/', 'ImageController@store');
+Route::post('/', 'ImageController@storewithResize');
 Route::get('/{image}', 'ImageController@show');
